@@ -1,0 +1,186 @@
+/* Shared elements */
+
+html,body {
+    height: 100%;
+}
+
+@font-face {
+	font-family: "Foxes in love";
+	src: url('assets/fonts/foxes-in-love.ttf');
+}
+
+img.icon {
+	padding-left: 15px;
+}
+
+#icon-row {
+	position: absolute;
+	top: 30px;
+	right: 50px;
+	z-index: 1000;
+}
+
+.next-page-arrow {
+	position: absolute;
+	bottom: 30px;
+	right: 50px;
+}
+
+h1 {
+	font-family: "Foxes in love";
+	font-size: 3em;
+	color: #768692;
+	padding: 150px 0px 20px 0px;
+	text-align: center;
+}
+
+h2 {
+	font-family: "Foxes in love";
+	font-size: 3em;
+	color: #768692;
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+} 
+
+p {
+	font-family: Avenir;
+	font-size: 1.3em;
+	line-height: 1.8em;
+	color: #768692;
+	text-align: center; 
+}
+
+.white-text {
+	color: white;
+	font-weight: 100;
+}
+
+p.link a {
+	font-family: Avenir;
+	font-size: 1em;
+	color: #768692;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+p.link-white a {
+	font-family: Avenir;
+	font-size: 1em;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+p.link {
+	padding-top: 15px;
+}
+
+p.link-white {
+	padding-top: 70px;
+	padding-bottom: 0px;
+	text-decoration: underline;
+}
+
+p.link-white a:hover{
+	padding-top: 100px;
+	padding-bottom: 0px;
+	text-decoration: underline;
+	color: #768692; 
+}
+
+.highlights {
+	font-family: "Foxes in love";
+	font-size: 1.2em;
+	font-weight: 100;
+}
+
+
+
+
+
+/* Home Page elements */
+
+
+/* Stories Page elements */
+
+#stories-text {
+	max-width: 1200px;
+	margin: auto;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+#hover-text {
+	font-family: "Foxes in love";
+	font-size: 1.6em;
+	color: white;
+	padding-top: 30px;
+}
+
+.story-image {
+    width: 450px;
+}
+
+
+/* Trends Page elements */
+
+.subtitle-circle {
+	position: absolute;
+	top: 55%;
+	left: 23%;
+	width: 55%;
+}
+
+
+
+/* Trends Detail Page elements */
+
+.trend-info {
+	position: absolute;
+	top: 25%;
+	left: 23%;
+	width: 55%;
+}
+
+
+
+/* Learn Page elements */
+
+.learn-subtitle-circle {
+	position: absolute;
+	top: 17%;
+	left: 32%;
+	width: 40%;
+}
+
+ul {
+	padding-left: 30%;
+	padding-right: 10%;
+}
+
+li {
+	font-family: Avenir;
+	font-size: 1.3em;
+	line-height: 1.8em;
+	color: #768692;
+}
+
+
+/* Learn Detail Page elements */
+
+#learn-detail-article-list {
+	background-color: #768692;
+	height: 100%;
+}
+
+.article-circle {
+	padding-top: 100px;
+}
+
+
+/* Connect Page elements */
+
+#connect-text {
+	max-width: 600px;
+	margin: auto;
+}
