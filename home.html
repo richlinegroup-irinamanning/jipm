@@ -9,10 +9,17 @@
   <link href="main.css" rel="stylesheet">
   <link href="home.css" rel="stylesheet">
   <style>
+    /* TODO move into .css file */
+    /* layout style */
+    @font-face {
+      font-family: "Foxes In Love";
+      src: url('assets/fonts/foxes-in-love.ttf');
+    }
+    
+    /* end layout style */
     /* layout specific */
     html, body, .container-fluid, .container-fluid > .row-fluid {
         height: 100%;
-        
         padding: 0px;
     }
     .container-fluid {
@@ -58,6 +65,13 @@
     <a href="#"><img src="assets/icons/facebook-icon.png" class="pull-right icon"></a>
   </div>
 
+  <!-- SLIDE OUT NAV BAR -->
+  <div style="float:right;background-color:gray;width:300px;height:100%;display:none;"><!-- TODO hidden for now -->
+    <ul>
+      <li>item 1</li>
+    </ul>
+  </div>
+
   <div class="container-fluid" style="">
     <div class="row-fluid">
 
@@ -65,6 +79,8 @@
       <div class="col-sm-4" style="background-size:cover;background-repeat:no-repeat;background-image: url('assets/images/home/slide-1.png');">
         <!-- TODO center circle separate -->
       </div>
+
+
 
       <!-- RIGHT COL -->
       <div class="col-sm-8" style="">
