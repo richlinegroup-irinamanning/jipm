@@ -6,26 +6,7 @@
 }
 /* end layout style */
 
-
-
-
-/* layout specific */
-
-html, body, .container-fluid, .container-fluid > .row-fluid {
-    height: 100%;
-    padding: 0px;
-}
-.container-fluid {
-  overflow: scroll;
-}
-.row-fluid {
-  overflow: scroll;
-}
-.row-fluid > div {
-    height: 100%;
-    padding: 0px;
-    overflow: hidden;
-}
+/* value prop rows */
 .valueprops {
     display: table;
     height: 100%;
@@ -40,10 +21,9 @@ html, body, .container-fluid, .container-fluid > .row-fluid {
     width: 100%;
     overflow: hidden;
 }
-/* end layout specific */
+/* end value prop rows */
 
-
-
+/* share widget */
 .share-icons {
   position: absolute;
   top: 30px;
@@ -54,13 +34,13 @@ html, body, .container-fluid, .container-fluid > .row-fluid {
 img.icon {
 	padding-left: 15px;
 }
-
 #icon-row {
 	position: absolute;
 	top: 30px;
 	right: 35px;
 	z-index: 1000;
 }
+/* end share widget */
 
 .next-page-arrow {
 	position: absolute;

@@ -1,0 +1,18 @@
+/* assumes we use a bg image for each col */
+html, body, .full-col-height-container, .full-col-height-container > .full-col-height-row {
+    height: 100%;
+    padding: 0px;
+}
+.full-col-height-container {
+  overflow: scroll;
+}
+.full-col-height-row {
+  overflow: scroll;
+}
+.full-col-height-row > div {
+    height: 100%;
+    padding: 0px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}

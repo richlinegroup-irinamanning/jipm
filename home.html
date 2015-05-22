@@ -8,12 +8,12 @@
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="main.css" rel="stylesheet">
   <link href="home.css" rel="stylesheet">
+  <link href="full-height-cols.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- FLOATING SHARE ICONS -->
   <img src="assets/images/labels/home-label.png" class="pull-right" style="position: absolute; top: 150px; right: 0px; z-index: 1000;">
-  <a href="mission.html"><img src="assets/icons/next-page-icon-white.png" class="pull-right next-page-arrow" style="z-index: 2000"></a> 
   <div class="share-icons">
     <a href="#"><img src="assets/icons/pinterest-icon.png" class="pull-right icon"></a>
     <a href="#"><img src="assets/icons/instagram-icon.png" class="pull-right icon"></a>
@@ -37,14 +37,18 @@
     </div>
   </div>
 
-  <div class="container-fluid" style="">
-    <div class="row-fluid">
+  <!-- NEXT PAGE ARROW -->
+  <a href="mission.html"><img src="assets/icons/next-page-icon-white.png" class="pull-right next-page-arrow" style="z-index: 2000"></a> 
+
+  <!-- MAIN LAYOUT -->
+  <div class="container-fluid full-col-height-container" style="">
+    <div class="row-fluid full-col-height-row">
 
       <!-- LEFT COL -->
       <!-- SLIDER -->
 
       <!-- SLIDE ONE -->
-      <div class="col-sm-4" style="background-size:cover;background-repeat:no-repeat;background-image: url('assets/images/home/slide-1.png');">
+      <div class="col-sm-4" style="background-image: url('assets/images/home/slide-1.png');">
         <a href="learn.html"><img src="assets/images/home/slide-1-circle.png" class="center-block img-responsive slider-circle" /></a>
       </div>
 
@@ -61,7 +65,7 @@
 
 
       <!-- RIGHT COL -->
-      <div class="col-sm-8" style="padding: 0px;">
+      <div class="col-sm-8">
         <div class="valueprops">
           <div class="valprop-row" style="background-color:#EEE;height:40%;">
             <!-- TODO solution to vert center image! -->
