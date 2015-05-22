@@ -12,18 +12,34 @@
   <body>
 
     <!-- FLOATING SHARE ICONS -->
-    <img src="assets/images/labels/home-label.png" class="pull-right" style="position: absolute; top: 150px; right: 0px; z-index: 1000;">
     <div class="share-icons">
       <a href="#"><img src="assets/icons/pinterest-icon.png" class="pull-right icon"></a>
       <a href="#"><img src="assets/icons/instagram-icon.png" class="pull-right icon"></a>
       <a href="#"><img src="assets/icons/facebook-icon.png" class="pull-right icon"></a>
+      <a href="home.html"><img src="assets/icons/home-icon.png" class="pull-right icon"></a>
     </div>
-    
-    <!-- NEXT PAGE ARROW -->
-    <a href="mission.html"><img src="assets/icons/next-page-icon-white.png" class="pull-right next-page-arrow" style="z-index: 2000"></a> 
 
-    <!-- TODO copy in nav bar once it's complete and include the following: -->
-      <!-- <img src="assets/images/labels/learn-label.png" style="position: absolute; top: 150px; right: 0px; z-index: 1000;"> -->
+    <!-- MENU PANEL -->
+    <!-- TODO connect menu tab to menu panel somehow -->
+    <img src="assets/images/labels/learn-label.png" class="" style="position:fixed;top:150px;right:0px;z-index:1000;" id="menu-tab">
+    <div id="menu-panel" style="position:fixed;background-color:#768692;width:250px;height:100%;right:-300px;z-index:1000;"><!-- TODO hidden for now -->
+      <ul id="menu-list">
+        <a href="home.html"><li class="menu-list-item">Home</li></a>
+        <a href="mission.html"><li class="menu-list-item">Mission</li></a>
+        <a href="stories.html"><li class="menu-list-item">Stories</li></a>
+        <a href="trends.html"><li class="menu-list-item">Trends</li></a>
+        <a href="learn.html"><li class="menu-list-item">Learn</li></a>
+        <a href="connect.html"><li class="menu-list-item">Connect</li></a>
+      </ul>
+      <div style="padding-left: 70px;">
+        <a href="#"><img src="assets/icons/facebook-icon.png" class="navbar-share-icon"/></a>
+        <a href="#"><img src="assets/icons/instagram-icon.png" class="navbar-share-icon"/></a>
+        <a href="#"><img src="assets/icons/pinterest-icon.png" class="navbar-share-icon"/></a>
+      </div>
+    </div>  
+
+    <!-- NEXT PAGE ARROW -->
+    <a href="connect.html"><img src="assets/icons/next-page-icon-blue.png" class="pull-right next-page-arrow" style="z-index: 2000"></a>
 
     <div class="container-fluid full-col-height-container">
       <div class="row full-col-height-row">
@@ -33,17 +49,14 @@
               <a href="learn-detail.html"><img src="assets/images/learn/article-1-subtitle-circle.png" class="center-block learn-subtitle-circle img-responsive"></a>
             </div>
             <div class="valprop-row" style="background-size:cover;background-image: url('assets/images/learn/article-2.png');height:50%;">
-              
               <a href="learn-detail.html"><img src="assets/images/learn/article-1-subtitle-circle.png" class="center-block learn-subtitle-circle img-responsive"/></a>
             </div>
           </div>
         </div>
-        
         <div class="col-md-6" style="padding: 0px;">
           <div class="valueprops">
             <div class="valprop-row" style="background-size:cover;background-image: url('assets/images/learn/article-3.png');height:50%;">
-              
-              <a href="learn-detail.html"><img src="assets/images/learn/article-1-subtitle-circle.png" class="center-block learn-subtitle-circle img-responsive"></a>
+              <a href="learn-detail.html"><img src="assets/images/learn/article-1-subtitle-circle.png" class="center-block learn-subtitle-circle img-responsive" style=""></a>
             </div>
             <div class="valprop-row" style="height:50%;">
               <div class="article-list">
@@ -65,5 +78,7 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script><!-- req for menu panel -->
+    <script src="menu-panel.js"></script>
   </body>
 </html>

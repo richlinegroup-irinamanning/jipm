@@ -10,33 +10,54 @@
     <link href="connect.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container-fluid">
-      <img src="assets/images/labels/connect-label.png" class="pull-right" style="position: absolute; top: 150px; right: 0px; z-index: 1000;">
-      <div class="row">
-        <div class="col-sm-12" id="icon-row">
-          <a href="#"><img src="assets/icons/pinterest-icon.png" class="pull-right icon"></a>
-          <a href="#"><img src="assets/icons/instagram-icon.png" class="pull-right icon"></a>
-          <a href="#"><img src="assets/icons/facebook-icon.png" class="pull-right icon"></a>
-          <a href="home.html"><img src="assets/icons/home-icon.png" class="pull-right icon"></a> 
-        </div>
+
+  <!-- FLOATING SHARE ICONS -->
+    <div class="share-icons">
+      <a href="#"><img src="assets/icons/pinterest-icon.png" class="pull-right icon"></a>
+      <a href="#"><img src="assets/icons/instagram-icon.png" class="pull-right icon"></a>
+      <a href="#"><img src="assets/icons/facebook-icon.png" class="pull-right icon"></a>
+      <a href="home.html"><img src="assets/icons/home-icon.png" class="pull-right icon"></a>
+    </div>
+
+    <!-- MENU PANEL -->
+    <!-- TODO connect menu tab to menu panel somehow -->
+    <img src="assets/images/labels/connect-label.png" class="" style="position:fixed;top:150px;right:0px;z-index:1000;" id="menu-tab">
+    <div id="menu-panel" style="position:fixed;background-color:#768692;width:250px;height:100%;right:-300px;z-index:1000;"><!-- TODO hidden for now -->
+      <ul id="menu-list">
+        <a href="home.html"><li class="menu-list-item">Home</li></a>
+        <a href="mission.html"><li class="menu-list-item">Mission</li></a>
+        <a href="stories.html"><li class="menu-list-item">Stories</li></a>
+        <a href="trends.html"><li class="menu-list-item">Trends</li></a>
+        <a href="learn.html"><li class="menu-list-item">Learn</li></a>
+        <a href="connect.html"><li class="menu-list-item">Connect</li></a>
+      </ul>
+      <div style="padding-left: 70px;">
+        <a href="#"><img src="assets/icons/facebook-icon.png" class="navbar-share-icon"/></a>
+        <a href="#"><img src="assets/icons/instagram-icon.png" class="navbar-share-icon"/></a>
+        <a href="#"><img src="assets/icons/pinterest-icon.png" class="navbar-share-icon"/></a>
       </div>
-      
-      
+    </div> 
+
+
+    <div class="container-fluid">   
       <div class="row">
         <div class="col-xs-12">
           <h1 class="text-center white-text">What makes you unique?</h1>
           <p class="text-center white-text" id="connect-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
           <div class="input-group input-group-lg" style="margin: auto;">
-            <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1" >
-            <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1" >
-            <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1" >
+            <input type="text" class="form-control" placeholder="Your Full Name" aria-describedby="sizing-addon1" >
+            <input type="text" class="form-control" placeholder="Your email address" aria-describedby="sizing-addon1" >
+            <input type="text" class="form-control" placeholder="Tell us what makes you unique". aria-describedby="sizing-addon1" >
           </div>
           <p class="link-white"><a href="#">Submit your story</a></p>
           <h1 class="text-center white-text" style="padding-top: 50px;">Thank you!</h1>
         </div>
-      </div> 
+      </div>
+    </div> 
       
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script><!-- req for menu panel -->
+    <script src="menu-panel.js"></script>
   </body>
 </html>

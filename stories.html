@@ -10,19 +10,38 @@
     <link href="connect.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container-fluid">
-      <img src="assets/images/labels/stories-label.png" class="pull-right" style="position: absolute; top: 150px; right: 0px; z-index: 1000;">
-      <a href="trends.html"><img src="assets/icons/next-page-icon-blue.png" style="z-index: 1000;" class="pull-right next-page-arrow"></a>
-      <div class="row">
-        <div class="col-sm-12" id="icon-row">
-          <a href="#"><img src="assets/icons/pinterest-icon.png" class="pull-right icon"></a>
-          <a href="#"><img src="assets/icons/instagram-icon.png" class="pull-right icon"></a>
-          <a href="#"><img src="assets/icons/facebook-icon.png" class="pull-right icon"></a>
-          <a href="home.html"><img src="assets/icons/home-icon.png" class="pull-right icon"></a> 
-        </div>
+    
+    <!-- FLOATING SHARE ICONS -->
+    <div class="share-icons">
+      <a href="#"><img src="assets/icons/pinterest-icon.png" class="pull-right icon"></a>
+      <a href="#"><img src="assets/icons/instagram-icon.png" class="pull-right icon"></a>
+      <a href="#"><img src="assets/icons/facebook-icon.png" class="pull-right icon"></a>
+      <a href="home.html"><img src="assets/icons/home-icon.png" class="pull-right icon"></a>
+    </div>
+
+    <!-- MENU PANEL -->
+    <!-- TODO connect menu tab to menu panel somehow -->
+    <img src="assets/images/labels/stories-label.png" class="" style="position:fixed;top:150px;right:0px;z-index:1000;" id="menu-tab">
+    <div id="menu-panel" style="position:fixed;background-color:#768692;width:250px;height:100%;right:-300px;z-index:1000;"><!-- TODO hidden for now -->
+      <ul id="menu-list">
+        <a href="home.html"><li class="menu-list-item">Home</li></a>
+        <a href="mission.html"><li class="menu-list-item">Mission</li></a>
+        <a href="stories.html"><li class="menu-list-item">Stories</li></a>
+        <a href="trends.html"><li class="menu-list-item">Trends</li></a>
+        <a href="learn.html"><li class="menu-list-item">Learn</li></a>
+        <a href="connect.html"><li class="menu-list-item">Connect</li></a>
+      </ul>
+      <div style="padding-left: 70px;">
+        <a href="#"><img src="assets/icons/facebook-icon.png" class="navbar-share-icon"/></a>
+        <a href="#"><img src="assets/icons/instagram-icon.png" class="navbar-share-icon"/></a>
+        <a href="#"><img src="assets/icons/pinterest-icon.png" class="navbar-share-icon"/></a>
       </div>
+    </div>  
+
+    <!-- NEXT PAGE ARROW -->
+    <a href="trends.html"><img src="assets/icons/next-page-icon-blue.png" class="pull-right next-page-arrow" style="z-index: 2000"></a>
       
-      
+    <div class="container-fluid">  
       <div class="row">
         <div class="col-xs-12">
           <h1 class="text-center white-text" id="stories-title">we are all unique.  Just like  pearls.</h1>
@@ -42,8 +61,11 @@
           <img src="assets/images/stories/ryan-clark.png" class="img-responsive story-image center-block" />
         </div>
       </div>
-      
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script><!-- req for menu panel -->
+    <script src="menu-panel.js"></script>
   </body>
 </html>
