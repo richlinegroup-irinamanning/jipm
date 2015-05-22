@@ -8,57 +8,12 @@
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="main.css" rel="stylesheet">
   <link href="home.css" rel="stylesheet">
-  <style>
-    /* TODO move into .css file */
-    /* layout style */
-    @font-face {
-      font-family: "Foxes In Love";
-      src: url('assets/fonts/foxes-in-love.ttf');
-    }
-    
-    /* end layout style */
-    /* layout specific */
-    html, body, .container-fluid, .container-fluid > .row-fluid {
-        height: 100%;
-        padding: 0px;
-    }
-    .container-fluid {
-      overflow: scroll;
-    }
-    .row-fluid {
-      overflow: scroll;
-    }
-    .row-fluid > div {
-        height: 100%;
-        padding: 0px;
-        overflow: hidden;
-    }
-    .valueprops {
-        display: table;
-        height: 100%;
-        width: 100%;
-        min-height: 100%;
-        margin: 0px;
-        padding: 0px;
-    }
-    .valueprop-row {
-        display: table-row;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-    }
-    /* end layout specific */
-    .share-icons {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      z-index: 1;
-    }
-  </style>
 </head>
 <body>
 
   <!-- FLOATING SHARE ICONS -->
+  <img src="assets/images/labels/home-label.png" class="pull-right" style="position: absolute; top: 150px; right: 0px; z-index: 1000;">
+  <a href="mission.html"><img src="assets/icons/next-page-icon-white.png" class="pull-right next-page-arrow" style="z-index: 2000"></a> 
   <div class="share-icons">
     <a href="#"><img src="assets/icons/pinterest-icon.png" class="pull-right icon"></a>
     <a href="#"><img src="assets/icons/instagram-icon.png" class="pull-right icon"></a>
@@ -66,38 +21,75 @@
   </div>
 
   <!-- SLIDE OUT NAV BAR -->
-  <div style="float:right;background-color:gray;width:300px;height:100%;display:none;"><!-- TODO hidden for now -->
-    <ul>
-      <li>item 1</li>
+  <div style="float:right;background-color:#768692;width:250px;height:100%;display:none;"><!-- TODO hidden for now -->
+    <ul id="menu-list">
+      <a href="home.html"><li class="menu-list-item">Home</li></a>
+      <a href="mission.html"><li class="menu-list-item">Mission</li></a>
+      <a href="stories.html"><li class="menu-list-item">Stories</li></a>
+      <a href="trends.html"><li class="menu-list-item">Trends</li></a>
+      <a href="learn.html"><li class="menu-list-item">Learn</li></a>
+      <a href="connect.html"><li class="menu-list-item">Connect</li></a>
     </ul>
+    <div style="padding-left: 70px;">
+      <a href="#"><img src="assets/icons/facebook-icon.png" class="navbar-share-icon"/></a>
+      <a href="#"><img src="assets/icons/instagram-icon.png" class="navbar-share-icon"/></a>
+      <a href="#"><img src="assets/icons/pinterest-icon.png" class="navbar-share-icon"/></a>
+    </div>
   </div>
 
   <div class="container-fluid" style="">
     <div class="row-fluid">
 
       <!-- LEFT COL -->
+      <!-- SLIDER -->
+
+      <!-- SLIDE ONE -->
       <div class="col-sm-4" style="background-size:cover;background-repeat:no-repeat;background-image: url('assets/images/home/slide-1.png');">
-        <!-- TODO center circle separate -->
+        <a href="learn.html"><img src="assets/images/home/slide-1-circle.png" class="center-block img-responsive slider-circle" /></a>
       </div>
+
+      <!-- SLIDE TWO -->
+      <!-- <div class="col-sm-4" style="background-size:cover;background-repeat:no-repeat;background-image: url('assets/images/home/slide-2.png');">
+        <a href="stories.html"><img src="assets/images/home/slide-2-circle.png" class="center-block img-responsive slider-circle" /></a>
+      </div> -->
+
+      <!-- SLIDE THREE -->
+      <!-- <div class="col-sm-4" style="background-size:cover;background-repeat:no-repeat;background-image: url('assets/images/home/slide-3.png');">
+        <a href="trends.html"><img src="assets/images/home/slide-3-circle.png" class="center-block img-responsive slider-circle" /></a>
+      </div> -->
 
 
 
       <!-- RIGHT COL -->
-      <div class="col-sm-8" style="">
+      <div class="col-sm-8" style="padding: 0px;">
         <div class="valueprops">
-          <div class="valprop-row" style="background-color:#EEE;height:30%;">
+          <div class="valprop-row" style="background-color:#EEE;height:40%;">
             <!-- TODO solution to vert center image! -->
-            <img src="assets/logos/jipm-logo.png" class="center-block" style="width:200px"/>
+            <img src="assets/logos/jipm-logo.png" class="center-block" style="width:300px; padding: 40px;"/>
           </div>
 
-          <div class="valprop-row" style="background-color:white;height:60%;">
-            <div class="container-fluid">
+          <div class="valprop-row" style="background-color:white;height:50%;">
+            <!-- <div class="container-fluid">
               <div class="row-fluid">
-                <div class="col-sm-12">
-                  <p style="text-align:justify;margin:auto;width:60%;font-size:24px;">June is Pearl Month™ is a campaign that centers around the nature or pearls and people. Explore educational articles, fashion trends, people’s stories and more!</p>
-                </div>
+                <div class="col-sm-12"> -->
+                  <p style="text-align:justify;margin:auto;width:60%;font-size:20px; padding-top: 30px;">June is Pearl Month™ is a campaign that centers around the nature or &nbsp;<span class="highlights">pearls</span> and &nbsp;<span class="highlights">people</span>. Explore educational &nbsp;<span class="highlights">articles</span>, fashion &nbsp;<span class="highlights">trends</span>, people’s &nbsp;<span class="highlights">stories</span> and more!</p>
+                  <p class="link" style="text-align: center; text-decoration: underline;"><a href="mission.html">Our Mission</a></p>
+                  <p style="padding: 0px; margin-top: 30px;font-size: 16px;">Featured sponsor</p>
+                  <a href="http://www.honora.com/" target="_blank"><img src="assets/logos/honora-logo.png" class="center-block" style="padding: 0px;" /></a>
+             <!--    </div>
               </div>
-            </div>
+            </div> -->
+          </div>
+          <div class="valprop-row" style="background-color:#97a4ae;;height:10%;">
+            <a href="http://www.qvc.com/jewelry/honora/_/N-mfluZ1z1419f/c.html" target="_blank"><img src="assets/logos/qvc-logo.png" class="retailer-logo" style="margin-left: 5%; margin-top:1%;"/></a>
+            <a href="http://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Dfashion-womens-jewelry&field-keywords=aurapearl&rh=i%3Afashion-womens-jewelry%2Ck%3Aaurapearl"><img src="assets/logos/amazon-logo.png" class="retailer-logo" style=""/></a> <!-- temporary link: CHANGE LATER -->
+            <a href="http://www1.macys.com/shop/jewelry-watches/pearls/Brand,Sortby,Productsperpage/Honora%20Style,ORIGINAL,40?id=2905&edge=hybrid&cm_sp=us_hdr-_-jewelry-_-2905_pearls&cm_sp=c2_1111US_browse_jewelry-%26-watches-by-material-pearls-_-row2-_-widget1_image_honora%2C-style%2C-shop-now" target="_blank"><img src="assets/logos/macys-logo.png" class="retailer-logo" style=""/></a>
+            <a href="http://www.kohls.com/search.jsp?search=freshwater+by+honora&submit-search=web-ta-keyword" target="_blank"><img src="assets/logos/kohls-logo.png" class="retailer-logo" style=""/></a>
+            <a href="http://www.helzberg.com/category/jewelry/pendants/pearl+necklaces.do?c=2456.2461.3753&pp=36&sortby=bestSellersAscend&cx=0" target="_blank"><img src="assets/logos/helzberg-logo.png" class="retailer-logo" style=""/></a> <!-- temporary link: CHANGE LATER -->
+            <a href="http://www.jcpenney.com/jewelry-watches/shop-departments/fine-jewelry/shop-/pearl-jewelry/_/N-gl6uc8Z1z13x4z/cat.jump?id=cat1003050008&deptId=dept20000020" target="_blank"><img src="assets/logos/jcp-logo.png" class="retailer-logo" style=""/></a>
+            <a href="http://www.bjs.com/OCEAN+TREASURES/refine.ocean-treasures.4294949611.1" target="_blank"><img src="assets/logos/bj-logo.png" class="retailer-logo" style=""/></a>
+            <a href="http://www.fredmeyerjewelers.com/Search/pearl_jewelry/gem-Pearl.aspx" target="_blank"><img src="assets/logos/fred-meyer-logo.png" class="retailer-logo" style=""/></a>
+            <a href="http://www.bonton.com/sc1/query/pearl%20jewelry" target="_blank"><img src="assets/logos/bonton-logo.png" class="retailer-logo" style=""/></a> <!-- temporary link: CHANGE LATER -->
           </div>
         </div>
       </div>

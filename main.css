@@ -1,12 +1,54 @@
-/* Shared elements */
-
-html,body {
-    height: 100%;
-}
+/* layout style */
 
 @font-face {
-	font-family: "Foxes in love";
-	src: url('assets/fonts/foxes-in-love.ttf');
+  font-family: "Foxes In Love";
+  src: url('assets/fonts/foxes-in-love.ttf');
+}
+/* end layout style */
+
+
+
+
+/* layout specific */
+
+html, body, .container-fluid, .container-fluid > .row-fluid {
+    height: 100%;
+    padding: 0px;
+}
+.container-fluid {
+  overflow: scroll;
+}
+.row-fluid {
+  overflow: scroll;
+}
+.row-fluid > div {
+    height: 100%;
+    padding: 0px;
+    overflow: hidden;
+}
+.valueprops {
+    display: table;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.valueprop-row {
+    display: table-row;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+/* end layout specific */
+
+
+
+.share-icons {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  z-index: 1;
 }
 
 img.icon {
@@ -16,7 +58,7 @@ img.icon {
 #icon-row {
 	position: absolute;
 	top: 30px;
-	right: 50px;
+	right: 35px;
 	z-index: 1000;
 }
 
@@ -98,7 +140,40 @@ p.link-white a:hover{
 
 
 
+/* Navigation Slide Out Bar */
+
+#menu-list {
+	padding-top: 150px;
+}
+
+.menu-list-item {
+	color: white;
+	text-transform: uppercase;
+	list-style: none;
+	line-height: 45px;
+	font-weight: 100;
+}
+
+.navbar-share-icon {
+	width: 40px;
+	padding: 5px;
+}
+
+/* End Navigation Slide Out Bar */
+
+
+
+
+
 /* Home Page elements */
+
+.slider-circle {
+	padding: 40% 5% ;
+}
+
+
+
+
 
 
 /* Stories Page elements */
@@ -121,6 +196,12 @@ p.link-white a:hover{
     width: 450px;
 }
 
+/* End Stories Page elements */
+
+
+
+
+
 
 /* Trends Page elements */
 
@@ -140,6 +221,10 @@ p.link-white a:hover{
 	top: 25%;
 	left: 23%;
 	width: 55%;
+}
+
+.retailer-logo {
+	padding: 5px;
 }
 
 
