@@ -13,15 +13,16 @@
 <body>
 
   <!-- FLOATING SHARE ICONS -->
-  <img src="assets/images/labels/home-label.png" class="pull-right" style="position: absolute; top: 150px; right: 0px; z-index: 1000;">
   <div class="share-icons">
     <a href="#"><img src="assets/icons/pinterest-icon.png" class="pull-right icon"></a>
     <a href="#"><img src="assets/icons/instagram-icon.png" class="pull-right icon"></a>
     <a href="#"><img src="assets/icons/facebook-icon.png" class="pull-right icon"></a>
   </div>
 
-  <!-- SLIDE OUT NAV BAR -->
-  <div style="float:right;background-color:#768692;width:250px;height:100%;display:none;"><!-- TODO hidden for now -->
+  <!-- MENU PANEL -->
+  <!-- TODO connect menu tab to menu panel somehow -->
+  <img src="assets/images/labels/home-label.png" class="" style="position:fixed;top:150px;right:0px;z-index:1000;" id="menu-tab">
+  <div id="menu-panel" style="position:fixed;background-color:#768692;width:250px;height:100%;right:-300px;z-index:1000;"><!-- TODO hidden for now -->
     <ul id="menu-list">
       <a href="home.html"><li class="menu-list-item">Home</li></a>
       <a href="mission.html"><li class="menu-list-item">Mission</li></a>
@@ -35,7 +36,7 @@
       <a href="#"><img src="assets/icons/instagram-icon.png" class="navbar-share-icon"/></a>
       <a href="#"><img src="assets/icons/pinterest-icon.png" class="navbar-share-icon"/></a>
     </div>
-  </div>
+  </div>  
 
   <!-- NEXT PAGE ARROW -->
   <a href="mission.html"><img src="assets/icons/next-page-icon-white.png" class="pull-right next-page-arrow" style="z-index: 2000"></a> 
@@ -101,5 +102,8 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script><!-- req for menu panel -->
+  <script src="menu-panel.js"></script>
+  
 </body>
 </html>
